@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene background="color:#000000">
+         <!--Camera-->
+         <a-entity position="0 0 15">
+            <a-camera></a-camera>
+            <a-sky src="bgi1.jpg"></a-sky>
+        </a-entity>
+        <!--floor-->
+        <a-plane position="0 0 9" rotation="-90 0 0" width="7" height="7" src="floor.jpg"></a-plane>
+        <!--bed-->
+        <a-box position = "0 0 9.5" width="4" height="4" rotation="-90 0 0" src="bed1.jpg"></a-box>
+        <a-box position = "0 0 7.5" width="4" height="2" rotation="-180 0 0" src="bedtop.jpg"></a-box> 
+        <!--pillow-->
+        <a-box position = "1 0.3 8.5" width="1" height="1" rotation="-90 0 0" src="pillow and bedsheet.jpg"></a-box>
+        <a-box position = "-1 0.3 8.5" width="1" height="1" rotation="-90 0 0" src="pillow and bedsheet.jpg"></a-box>
+        <!--bedsheet-->
+        <a-plane position="0 0.7 10.7" rotation="-90 0 0" width="3" height="1.7" src="pillow and bedsheet.jpg"></a-plane>
+        <!--wall-->
+        <a-plane position="0 2.5 7.7" rotation="0 0 0" width="7" height="7" src="wall.jpg"></a-plane>
+</a-scene>
+</body>
+</html>
